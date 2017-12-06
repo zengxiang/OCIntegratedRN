@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'BGYZhiTuo' do
+    pod 'AFNetworking'
+    pod 'SVProgressHUD'
+    pod 'SDWebImage'
+    pod 'Masonry'
+    pod 'Bugly'
+    pod 'BaiduMapKit'
+    pod 'React', :path => './ReactVC/node_modules/react-native', :subspecs => [
+    'Core',
+    'BatchedBridge',
+    'RCTText',
+    'RCTNetwork',
+    'RCTImage',
+    'RCTWebSocket',
+    'DevSupport',
+    'RCTAnimation',
+    'RCTActionSheet',
+    'ART'
+    ]
+    pod 'CodePush', :path => './ReactVC/node_modules/react-native-code-push'
+    pod 'yoga', :path => './ReactVC/node_modules/react-native/ReactCommon/yoga' 
+end
